@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "generate:showcase": "bun scripts/generate-showcase-items.ts",
+    "dev": "bun run generate:showcase && next dev",
+    "build": "bun run generate:showcase && next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "motion": "^12.33.0",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"
@@ -21,6 +23,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   },
   "ignoreScripts": [
