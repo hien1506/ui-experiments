@@ -59,7 +59,7 @@ class ShowcaseErrorBoundary extends Component<
                 e.stopPropagation();
                 this.reset();
               }}
-              className="rounded-lg bg-neutral-800 px-3 py-1.5 text-xs font-medium text-neutral-300 transition-colors hover:bg-neutral-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950"
+              className="rounded-lg bg-neutral-800 px-3 py-1.5 text-xs font-medium  text-neutral-300 transition-colors hover:bg-neutral-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950"
               aria-label="Retry loading component"
             >
               Retry
