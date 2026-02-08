@@ -107,7 +107,7 @@ export default function Grid() {
                       {item.metadata.description}
                     </p>
                   </div>
-                  <span className="shrink-0 rounded-full bg-accent-muted px-4 py-2 font-mono text-xs font-semibold uppercase tracking-wider text-text-secondary">
+                  <span className="shrink-0 rounded-ful bg-accent-muted px-4 py-2 font-mono text-xs font-semibold uppercase tracking-wider text-text-secondary">
                     {item.metadata.category}
                   </span>
                 </div>
