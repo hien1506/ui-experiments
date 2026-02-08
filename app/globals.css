@@ -2,43 +2,20 @@
 
 :root {
   --background: #fff;
-  --surface: #ffffff;
-  --surface-hover: #f5f5f5;
-  --border-subtle: #ebebeb;
-  --border: #e0e0e0;
-  --border-hover: #d0d0d0;
+  --border-subtle: #a1a1a180;
   --text-primary: #000;
-  --accent: #111111;
+  --text-secondary: #717182;
   --accent-muted: rgba(0, 0, 0, 0.05);
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--text-primary);
-  --color-surface: var(--surface);
-  --color-surface-hover: var(--surface-hover);
   --color-border-subtle: var(--border-subtle);
-  --color-border: var(--border);
-  --color-border-hover: var(--border-hover);
   --color-text-primary: var(--text-primary);
-  --color-text-secondary: var(--text-secondary);
-  --color-text-tertiary: var(--text-tertiary);
-  --color-accent: var(--accent);
   --color-accent-muted: var(--accent-muted);
+  --color-text-secondary: var(--text-secondary);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
-  --animate-ripple: ripple 600ms ease-out forwards;
-}
-
-@keyframes ripple {
-  0% {
-    transform: scale(0);
-    opacity: 0.4;
-  }
-  100% {
-    transform: scale(4);
-    opacity: 0;
-  }
 }
 
 body {

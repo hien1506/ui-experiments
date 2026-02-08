@@ -19,7 +19,7 @@ export default function Grid() {
       {SHOWCASE_ITEMS.map((item) => (
         <li
           key={item.metadata.id}
-          className="group overflow-hidden border border-border-subtle bg-surface"
+          className="group overflow-hidden rounded-xl border border-border-subtle bg-surface"
           style={{ touchAction: "manipulation" }}
         >
           {/* Live Component Preview */}
