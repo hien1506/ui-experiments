@@ -12,16 +12,10 @@ import type { ShowcaseItem } from "./registry";
 
 import AnimatedTabsComponent from "./AnimatedTabs/Component";
 import { metadata as AnimatedTabsMetadata } from "./AnimatedTabs/metadata";
-import MagneticButtonComponent from "./MagneticButton/Component";
-import { metadata as MagneticButtonMetadata } from "./MagneticButton/metadata";
 
 export const SHOWCASE_ITEMS: ShowcaseItem[] = [
   {
     Component: AnimatedTabsComponent,
     metadata: AnimatedTabsMetadata,
-  },
-  {
-    Component: MagneticButtonComponent,
-    metadata: MagneticButtonMetadata,
   },
 ];

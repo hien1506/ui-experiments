@@ -1,19 +1,41 @@
 @import "tailwindcss";
 
+/* -----------------------------------------------------------------------------
+   Design system
+   Tokens in OKLCH where noted (L lightness, C chroma, H hue).
+   ----------------------------------------------------------------------------- */
+
 :root {
+  /* Surfaces */
   --background: #fff;
-  --border-subtle: #a1a1a180;
-  --text-primary: #000;
-  --text-secondary: #717182;
-  --accent-muted: rgba(0, 0, 0, 0.05);
+  --surface: #fff;
+  --surface-hover: #fafafa;
+
+  /* Borders */
+  --border-subtle: #e6e6e6;
+  --border: #dbdbdb;
+
+  /* Text (OKLCH) */
+  --text-primary: oklch(0.145 0 0);
+  --text-secondary: oklch(0.52 0.02 265);
+  --text-tertiary: oklch(0.65 0.01 265);
+
+  /* Accents */
+  --accent: oklch(0.145 0 0);
+  --accent-muted: oklch(0.97 0 0);
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
   --color-border-subtle: var(--border-subtle);
+  --color-border: var(--border);
   --color-text-primary: var(--text-primary);
-  --color-accent-muted: var(--accent-muted);
   --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-accent: var(--accent);
+  --color-accent-muted: var(--accent-muted);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
 }
@@ -22,6 +44,22 @@ body {
   background: var(--background);
   color: var(--text-primary);
   font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .tab-trigger {
+    transform-origin: center;
+    will-change: transform;
+    transition: transform 150ms ease, color 150ms ease, background-color 150ms ease;
+  }
+
+  .tab-trigger:hover {
+    transform: translateY(-1px);
+  }
+
+  .tab-trigger:active {
+    transform: translateY(0) scale(0.97);
+  }
 }
 
 /* Respect reduced motion preferences */

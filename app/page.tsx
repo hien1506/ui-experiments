@@ -6,15 +6,12 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <main className="relative mx-auto max-w-7xl px-4">
         <div className="pt-24 pb-24 flex flex-col gap-4">
-          {/* <h1 className="text-md font-bold font-mono text-text-secondary uppercase">
-            UI Experiments
-          </h1> */}
-          <p className="text-5xl leading-[1.1] w-full max-w-4xl font-sans">
+          <h1 className="text-5xl leading-tight w-full max-w-4xl font-sans">
             Micro interactions and animations created by{" "}
             <Link className="underline" href="https://hien-nguyen.site/">
               Hien Nguyen
             </Link>
-          </p>
+          </h1>
         </div>
         <Grid />
       </main>
